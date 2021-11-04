@@ -83,3 +83,11 @@
 2021-11-04 22:04:46,451 - DEBUG - i is 5, total is 120
 2021-11-04 22:04:46,451 - DEBUG - End of factorial(5%)
 2021-11-04 22:04:46,451 - DEBUG - End of program
+2021-11-04 22:05:02,998 - DEBUG - Start of factorial(5%)
+2021-11-04 22:05:02,998 - DEBUG - i is 1, total is 1
+2021-11-04 22:05:02,998 - DEBUG - i is 2, total is 2
+2021-11-04 22:05:02,999 - DEBUG - i is 3, total is 6
+2021-11-04 22:05:02,999 - DEBUG - i is 4, total is 24
+2021-11-04 22:05:02,999 - DEBUG - i is 5, total is 120
+2021-11-04 22:05:02,999 - DEBUG - End of factorial(5%)
+2021-11-04 22:05:03,001 - DEBUG - End of program
