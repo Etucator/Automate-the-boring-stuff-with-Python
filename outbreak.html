@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="True" name="HandheldFriendly" />
+    <meta content="en_US" property="og:locale" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <meta content="https://outbreak.info/" property="og:url" />
+    <meta content="outbreak.info" property="og:site_name" />
+    <meta content="outbreak.info" property="og:title" />
+    <meta
+      content="outbreak.info is a standardized, searchable platform to discover and explore COVID-19 and SARS-CoV-2 data from the Center for Viral Systems Biology (cvisb.org) at Scripps Research. It contains three parts: a standardized searchable database of COVID-19 research; customizable real-time surveillance reports on SARS-CoV-2 variants and mutations; and an explorable interface to examine changes in epidemiological data."
+      name="description"
+    />
+    <meta
+      content="https://i.postimg.cc/d0NwNjjs/featured-copy.jpg"
+      property="og:image"
+    />
+    <meta content="image/jpg" property="og:image:type" />
+    <meta content="1200" property="og:image:width" />
+    <meta content="630" property="og:image:height" />
+    <meta content="website" property="og:type" />
+    <meta
+      content="outbreak.info is a standardized, searchable platform to discover and explore COVID-19 and SARS-CoV-2 data from the Center for Viral Systems Biology (cvisb.org) at Scripps Research. It contains three parts: a standardized searchable database of COVID-19 research; customizable real-time surveillance reports on SARS-CoV-2 variants and mutations; and an explorable interface to examine changes in epidemiological data."
+      property="og:description"
+    />
+    <meta content="" property="fb:app_id" />
+    <meta content="outbreak.info" name="twitter:title" />
+    <meta
+      content="https://i.postimg.cc/d0NwNjjs/featured-copy.jpg"
+      name="twitter:image"
+    />
+    <meta content="https://outbreak.info/" name="twitter:url" />
+    <meta
+      content="outbreak.info is a standardized, searchable platform to discover and explore COVID-19 and SARS-CoV-2 data from the Center for Viral Systems Biology (cvisb.org) at Scripps Research. It contains three parts: a standardized searchable database of COVID-19 research; customizable real-time surveillance reports on SARS-CoV-2 variants and mutations; and an explorable interface to examine changes in epidemiological data."
+      name="twitter:card"
+    />
+    <link href="/favicon.ico" rel="icon" />
+    <title>outbreak.info</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=DM+Sans:400,400i,700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="@/assets/apple-touch-icon.png"
+      rel="apple-touch-icon"
+      sizes="180x180"
+    />
+    <link
+      href="@/assets/favicon-32x32.png"
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      href="@/assets/favicon-16x16.png"
+      rel="icon"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link
+      color="#126b93"
+      href="@/assets/safari-pinned-tab.svg"
+      rel="mask-icon"
+    />
+    <link href="@/assets/favicon.ico" rel="shortcut icon" />
+    <meta content="#126b93" name="msapplication-TileColor" />
+    <meta content="@/assets/browserconfig.xml" name="msapplication-config" />
+    <meta content="#ffffff" name="theme-color" />
+    <script
+      crossorigin="anonymous"
+      integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    ></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/solid.min.css"
+      rel="stylesheet"
+    />
+    <script
+      crossorigin="anonymous"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    ></script>
+    <link
+      crossorigin="anonymous"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      rel="stylesheet"
+    />
+    <script
+      crossorigin="anonymous"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>
+    <link href="/css/about~087c83bc.63966fc1.css" rel="prefetch" />
+    <link href="/css/chunk-15de7cb8.9141e175.css" rel="prefetch" />
+    <link href="/css/chunk-1c419aa7.2995b047.css" rel="prefetch" />
+    <link href="/css/chunk-1f8ed1a2.6a0c1d62.css" rel="prefetch" />
+    <link href="/css/chunk-1f92ccfc.3c8ea077.css" rel="prefetch" />
+    <link href="/css/chunk-39a8d263.ffe29359.css" rel="prefetch" />
+    <link href="/css/chunk-3e5015fe.48bb2528.css" rel="prefetch" />
+    <link href="/css/chunk-455d403d.d63e95d0.css" rel="prefetch" />
+    <link href="/css/chunk-49d66e7a.833b2b20.css" rel="prefetch" />
+    <link href="/css/chunk-5c181268.d400e55f.css" rel="prefetch" />
+    <link href="/css/chunk-77802f83.a92b9075.css" rel="prefetch" />
+    <link href="/css/chunk-7d22e4f8.c8417cd0.css" rel="prefetch" />
+    <link href="/css/chunk-7f8414b0.5d3be8e5.css" rel="prefetch" />
+    <link href="/css/chunk-aa38e726.703a4974.css" rel="prefetch" />
+    <link href="/css/chunk-c2f5bdc6.9392f3d8.css" rel="prefetch" />
+    <link href="/css/chunk-c5bb48e2.9392f3d8.css" rel="prefetch" />
+    <link href="/css/chunk-db01e20c.5405afbc.css" rel="prefetch" />
+    <link href="/css/chunk-f2ea478e.948fa8a1.css" rel="prefetch" />
+    <link href="/css/chunk-f49c3d40.a252f389.css" rel="prefetch" />
+    <link href="/css/chunk-fe0a7560.3f627402.css" rel="prefetch" />
+    <link
+      href="/css/combined-lineage-report~678f84af.7f4cace7.css"
+      rel="prefetch"
+    />
+    <link
+      href="/css/combined-lineage-report~f71cff67.e1bfe18f.css"
+      rel="prefetch"
+    />
+    <link href="/css/compare~9067728d.f194e778.css" rel="prefetch" />
+    <link href="/css/compare~b59217a9.7c2bfbd5.css" rel="prefetch" />
+    <link href="/css/compare~bb9f020d.05487f7f.css" rel="prefetch" />
+    <link href="/css/contributing~836c385e.9f2658f6.css" rel="prefetch" />
+    <link href="/css/data~690b702c.7f4cace7.css" rel="prefetch" />
+    <link href="/css/data~f71cff67.6bc00c10.css" rel="prefetch" />
+    <link href="/css/doubling-rates~f71cff67.2f0e02bb.css" rel="prefetch" />
+    <link href="/css/epi~21833f8f.1c554dce.css" rel="prefetch" />
+    <link href="/css/epi~690b702c.7f4cace7.css" rel="prefetch" />
+    <link href="/css/epi~d5f3b51b.b827d7e9.css" rel="prefetch" />
+    <link href="/css/epi~e73b60ec.275a2605.css" rel="prefetch" />
+    <link href="/css/faq~f71cff67.595e0058.css" rel="prefetch" />
+    <link href="/css/home~53ba11fd.0280d004.css" rel="prefetch" />
+    <link href="/css/home~bb9f020d.a8b6fb43.css" rel="prefetch" />
+    <link href="/css/latest~31ecd969.376043f2.css" rel="prefetch" />
+    <link href="/css/location-reports~f71cff67.6563adfb.css" rel="prefetch" />
+    <link href="/css/location-report~678f84af.15d987a9.css" rel="prefetch" />
+    <link href="/css/location-report~f71cff67.35c39eaf.css" rel="prefetch" />
+    <link href="/css/press~31ecd969.990c9566.css" rel="prefetch" />
+    <link href="/css/regions~105ae7f6.7860ac2b.css" rel="prefetch" />
+    <link href="/css/regions~f71cff67.6906003e.css" rel="prefetch" />
+    <link href="/css/resource-summary~f71cff67.6cc3471c.css" rel="prefetch" />
+    <link href="/css/resources-types~20f463f5.8de20dbc.css" rel="prefetch" />
+    <link href="/css/resources-types~21833f8f.9426f38e.css" rel="prefetch" />
+    <link href="/css/resources-types~678f84af.7f4cace7.css" rel="prefetch" />
+    <link href="/css/resources-types~6ebf27e6.24e09d4d.css" rel="prefetch" />
+    <link href="/css/resources-types~a0a49702.77462294.css" rel="prefetch" />
+    <link href="/css/resources~690b702c.7f4cace7.css" rel="prefetch" />
+    <link href="/css/resources~f71cff67.6c61c62b.css" rel="prefetch" />
+    <link href="/css/resources~fd795bdd.9ebae968.css" rel="prefetch" />
+    <link
+      href="/css/situation-reports-comparison~678f84af.7f4cace7.css"
+      rel="prefetch"
+    />
+    <link
+      href="/css/situation-reports-comparison~f71cff67.7052a937.css"
+      rel="prefetch"
+    />
+    <link
+      href="/css/situation-reports-status~f71cff67.c5a3271e.css"
+      rel="prefetch"
+    />
+    <link href="/css/situation-reports~678f84af.7f4cace7.css" rel="prefetch" />
+    <link href="/css/situation-reports~9275f77e.3aac3910.css" rel="prefetch" />
+    <link href="/css/situation-reports~9fa10dbc.348ebe7d.css" rel="prefetch" />
+    <link href="/css/sources~352c661e.966f54d3.css" rel="prefetch" />
+    <link href="/css/sources~f71cff67.aa05f659.css" rel="prefetch" />
+    <link href="/css/summary~f71cff67.33d3250e.css" rel="prefetch" />
+    <link href="/css/topics~253ae210.7f4cace7.css" rel="prefetch" />
+    <link href="/css/topics~cc3eafe7.99a46b8c.css" rel="prefetch" />
+    <link href="/css/topics~f71cff67.dfc84d09.css" rel="prefetch" />
+    <link href="/css/videos~f71cff67.877f6e67.css" rel="prefetch" />
+    <link href="/css/watch-list~f71cff67.f154238c.css" rel="prefetch" />
+    <link href="/js/404~f71cff67.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/about~087c83bc.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/about~253ae210.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/about~6ec89b74.f9878b73.0.3.1.js" rel="prefetch" />
+    <link
+      href="/js/about~citation~combined-lineage-report~compare~data~doubling-rates~epi~home~latest~license~location-~37df25a1.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/about~citation~combined-lineage-report~compare~data~doubling-rates~epi~home~license~location-report~~f5533828.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link href="/js/about~d939e436.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/about~f71cff67.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-0bffba12.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-15de7cb8.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-1c419aa7.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-1f8ed1a2.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-1f92ccfc.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-20b080b3.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-21d56c00.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-2d0a4059.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-2d0a4849.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-2d0ac915.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-2d0be333.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-2d0cca73.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-2d0d7a44.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-2d0da77f.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-2d207da3.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-2d2101cd.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-2d215cc0.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-2d216b28.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-2d2176fa.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-2d21e7a5.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-2d21f4b7.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-2d22c6cf.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-2d22ce59.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-39a8d263.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-3e5015fe.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-44f64f51.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-455d403d.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-49ab3ecc.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-49d66e7a.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-50eefdef.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-5c181268.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-604d3264.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-6b89894e.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-6fc7da3a.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-743b92a3.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-77802f83.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-7d22e4f8.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-7f8414b0.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-8491dfae.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-aa38e726.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-c2f5bdc6.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-c5bb48e2.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-db01e20c.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-f2ea478e.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-f49c3d40.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-fd536282.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/chunk-fe0a7560.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/citation~786c1a2b.f9878b73.0.3.1.js" rel="prefetch" />
+    <link
+      href="/js/citation~license~terms~31ecd969.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/combined-lineage-report~253ae210.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/combined-lineage-report~678f84af.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/combined-lineage-report~690b702c.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/combined-lineage-report~6ec89b74.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/combined-lineage-report~7773ada7.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/combined-lineage-report~d939e436.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/combined-lineage-report~eee80f1d.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/combined-lineage-report~f71cff67.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link href="/js/compare~253ae210.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/compare~690b702c.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/compare~6ec89b74.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/compare~9067728d.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/compare~9dea1166.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/compare~b59217a9.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/compare~bb9f020d.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/compare~d939e436.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/compare~f905a9fc.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/contributing~836c385e.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/data~253ae210.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/data~690b702c.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/data~c1807361.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/data~f71cff67.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/doubling-rates~678f84af.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/doubling-rates~6ec89b74.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/doubling-rates~748942c6.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/doubling-rates~7d359b94.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/doubling-rates~c1807361.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/doubling-rates~c6a5805a.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/doubling-rates~d939e436.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/doubling-rates~f71cff67.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/epi~21833f8f.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/epi~253ae210.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/epi~690b702c.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/epi~6ec89b74.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/epi~9dea1166.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/epi~d5f3b51b.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/epi~d939e436.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/epi~e73b60ec.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/epi~fa88833e.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/faq~f71cff67.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/home~0205bef0.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/home~253ae210.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/home~53ba11fd.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/home~5e9c94b4.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/home~6ec89b74.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/home~bb9f020d.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/home~d939e436.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/latest~31ecd969.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/license~d73de89d.f9878b73.0.3.1.js" rel="prefetch" />
+    <link
+      href="/js/location-reports~253ae210.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/location-reports~6ec89b74.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/location-reports~d939e436.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/location-reports~f71cff67.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/location-report~253ae210.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/location-report~678f84af.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/location-report~690b702c.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/location-report~6ec89b74.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/location-report~d939e436.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/location-report~f71cff67.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link href="/js/press~31ecd969.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/privacy~02f1f96b.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/regions~105ae7f6.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/regions~253ae210.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/regions~690b702c.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/regions~9dea1166.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/regions~f71cff67.f9878b73.0.3.1.js" rel="prefetch" />
+    <link
+      href="/js/resource-summary~253ae210.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/resource-summary~f71cff67.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/resources-types~20f463f5.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/resources-types~21833f8f.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/resources-types~253ae210.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/resources-types~51756765.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/resources-types~678f84af.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/resources-types~6ac5c1d3.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/resources-types~6ebf27e6.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/resources-types~7773ada7.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/resources-types~a0a49702.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/resources-types~ac0f77ce.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/resources-types~d939e436.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/resources-types~ea0a5b1a.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/resources-types~eee80f1d.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link href="/js/resources~253ae210.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/resources~690b702c.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/resources~7773ada7.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/resources~9dea1166.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/resources~eee80f1d.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/resources~f71cff67.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/resources~fd795bdd.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/schema~f71cff67.f9878b73.0.3.1.js" rel="prefetch" />
+    <link
+      href="/js/situation-reports-caveats~f71cff67.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/situation-reports-comparison~253ae210.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/situation-reports-comparison~678f84af.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/situation-reports-comparison~690b702c.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/situation-reports-comparison~6ec89b74.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/situation-reports-comparison~d939e436.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/situation-reports-comparison~f71cff67.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/situation-reports-methods~253ae210.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/situation-reports-methods~6ec89b74.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/situation-reports-methods~d939e436.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/situation-reports-methods~f71cff67.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/situation-reports-status~253ae210.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/situation-reports-status~6ec89b74.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/situation-reports-status~d939e436.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/situation-reports-status~f71cff67.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/situation-reports~253ae210.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/situation-reports~3b4f5428.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/situation-reports~5c0f5934.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/situation-reports~5e9c94b4.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/situation-reports~678f84af.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/situation-reports~690b702c.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/situation-reports~6ec89b74.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/situation-reports~7773ada7.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/situation-reports~77bf5e45.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/situation-reports~9275f77e.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/situation-reports~9dea1166.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/situation-reports~9fa10dbc.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/situation-reports~aec364ab.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/situation-reports~d939e436.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link
+      href="/js/situation-reports~eee80f1d.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link href="/js/sources~253ae210.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/sources~352c661e.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/sources~f71cff67.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/summary~253ae210.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/summary~690b702c.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/summary~6ec89b74.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/summary~c1807361.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/summary~d939e436.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/summary~f71cff67.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/terms~030ba51e.f9878b73.0.3.1.js" rel="prefetch" />
+    <link
+      href="/js/topic-definitions~31ecd969.f9878b73.0.3.1.js"
+      rel="prefetch"
+    />
+    <link href="/js/topics~253ae210.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/topics~cc3eafe7.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/topics~f71cff67.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/videos~f71cff67.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/watch-list~253ae210.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/watch-list~6ec89b74.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/watch-list~d939e436.f9878b73.0.3.1.js" rel="prefetch" />
+    <link href="/js/watch-list~f71cff67.f9878b73.0.3.1.js" rel="prefetch" />
+    <link as="style" href="/css/app~d0ae3f07.1727444b.css" rel="preload" />
+    <link
+      as="style"
+      href="/css/chunk-vendors~ee0fb80b.b55a120b.css"
+      rel="preload"
+    />
+    <link as="script" href="/js/app~d0ae3f07.f9878b73.0.3.1.js" rel="preload" />
+    <link
+      as="script"
+      href="/js/chunk-vendors~025de6b5.f9878b73.0.3.1.js"
+      rel="preload"
+    />
+    <link
+      as="script"
+      href="/js/chunk-vendors~7dcdd765.f9878b73.0.3.1.js"
+      rel="preload"
+    />
+    <link
+      as="script"
+      href="/js/chunk-vendors~b5906859.f9878b73.0.3.1.js"
+      rel="preload"
+    />
+    <link
+      as="script"
+      href="/js/chunk-vendors~c37d664f.f9878b73.0.3.1.js"
+      rel="preload"
+    />
+    <link
+      as="script"
+      href="/js/chunk-vendors~c616263e.f9878b73.0.3.1.js"
+      rel="preload"
+    />
+    <link
+      as="script"
+      href="/js/chunk-vendors~d2305125.f9878b73.0.3.1.js"
+      rel="preload"
+    />
+    <link
+      as="script"
+      href="/js/chunk-vendors~d939e436.f9878b73.0.3.1.js"
+      rel="preload"
+    />
+    <link
+      as="script"
+      href="/js/chunk-vendors~e24b276f.f9878b73.0.3.1.js"
+      rel="preload"
+    />
+    <link
+      as="script"
+      href="/js/chunk-vendors~ee0fb80b.f9878b73.0.3.1.js"
+      rel="preload"
+    />
+    <link
+      as="script"
+      href="/js/chunk-vendors~fdc6512a.f9878b73.0.3.1.js"
+      rel="preload"
+    />
+    <link href="/css/chunk-vendors~ee0fb80b.b55a120b.css" rel="stylesheet" />
+    <link href="/css/app~d0ae3f07.1727444b.css" rel="stylesheet" />
+  </head>
+  <body class="bg-light">
+    <noscript
+      ><strong
+        >.</strong
+      ></noscriptWe're sorry but outbreak.info doesn't work properly without JavaScript
+        enabled. Please enable it to continue
+    >
+    <div id="app"></div>
+    <script src="/js/chunk-vendors~d939e436.f9878b73.0.3.1.js"></script>
+    <script src="/js/chunk-vendors~e24b276f.f9878b73.0.3.1.js"></script>
+    <script src="/js/chunk-vendors~b5906859.f9878b73.0.3.1.js"></script>
+    <script src="/js/chunk-vendors~c616263e.f9878b73.0.3.1.js"></script>
+    <script src="/js/chunk-vendors~025de6b5.f9878b73.0.3.1.js"></script>
+    <script src="/js/chunk-vendors~c37d664f.f9878b73.0.3.1.js"></script>
+    <script src="/js/chunk-vendors~ee0fb80b.f9878b73.0.3.1.js"></script>
+    <script src="/js/chunk-vendors~fdc6512a.f9878b73.0.3.1.js"></script>
+    <script src="/js/chunk-vendors~7dcdd765.f9878b73.0.3.1.js"></script>
+    <script src="/js/chunk-vendors~d2305125.f9878b73.0.3.1.js"></script>
+    <script src="/js/app~d0ae3f07.f9878b73.0.3.1.js"></script>
+  </body>
+</html>
+
